@@ -1,0 +1,25 @@
+img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    align-items: center;
+    position: center;
+    padding: 10px;
+    padding-left: 10pc;
+  }
+  .navbar{
+    background: rgb(56, 190, 29);
+    display: block;
+    width: 10%;
+
+  }
+  li{
+    list-style: none;
+    width: 10%;
+
+  }
+  li a {
+    display: block;
+    text-decoration: none;
+    width: 10%;
+  }

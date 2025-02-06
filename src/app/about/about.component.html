@@ -1,0 +1,16 @@
+<pre>
+    This task is to check understanding of Angular projects architecture. 
+    You need to show list of cards with documents from DocumentsApiServvice. 
+    They should display info about docuemt id, name and dueDate. If due date is passed show it in red.
+</pre>
+<div *ngFor="let item of cardsObj$ | async">
+    <h3>Cards</h3>
+    <p>ID: {{item.id}}</p>
+    <p>Name: {{item.name}}</p>
+    <p>IssueDaye: {{item.issueDaye | date: 'medium'}}</p>
+    <!-- <p [ngStyle]="{backgroundColor: isOverDue(item.dueDate)? 'red': 'blue'}">
+        DueDate:{{item.dueDate | date: 'medium'}}
+    </p>
+    <p [ngStyle]="item.dueDate | dueDatepipe">DueDate2:{{item.dueDate | date: 'medium'}}</p> -->
+    <p [ngStyle]="{'backgroundColor': item.dueDate > date ? 'red': 'black'}">DueDate2: {{item.dueDate | date: 'medium'}}</p>
+</div>
