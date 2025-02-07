@@ -30,9 +30,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Angularapp2'`, () => {
+  it(`should have as title 'Angular-website'`, () => {
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Angularapp2');
+    expect(app.title).toEqual('Angular-website');
   });
 
   it('should render title', () => {

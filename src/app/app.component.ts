@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
- title = "Angularapp2"
+ title = "Angular-website"
 }
